@@ -1,12 +1,19 @@
 import type { ReactNode } from "react";
 
-const explanationLorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nulla facilisi. Integer at lectus vel nunc laoreet accumsan. Maecenas volutpat facilisis nibh, ut pharetra ligula fermentum id.`;
+type StandardSectionProps = {
+  title: string;
+  explanation: ReactNode | ReactNode[];
+  reflection: ReactNode | ReactNode[];
+  artifact?: ReactNode | ReactNode[];
+  artifactPlaceholder?: ReactNode;
+};
 
-const artifactLorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.`;
+const defaultArtifactPlaceholder =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.";
 
-const reflectionLorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.`;
-
-const artifactEmbedLorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.`;
+function toBlocks(content: ReactNode | ReactNode[]) {
+  return Array.isArray(content) ? content : [content];
+}
 
 function SectionCard({
   id,
@@ -39,12 +46,11 @@ function SectionCard({
 
 export function StandardSection({
   title,
-  hideArtifact = false,
-}: {
-  title: string;
-  /** When true, the Artifact block is omitted (e.g. ISTE 2: Leader). */
-  hideArtifact?: boolean;
-}) {
+  explanation,
+  artifact,
+  reflection,
+  artifactPlaceholder = defaultArtifactPlaceholder,
+}: StandardSectionProps) {
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <header className="mb-10 border-b border-rose-200/90 pb-8 text-center">
@@ -58,26 +64,30 @@ export function StandardSection({
 
       <div className="space-y-8">
         <SectionCard id="explanation" title="Explanation">
-          <p>{explanationLorem}</p>
-          <p>{explanationLorem}</p>
+          {toBlocks(explanation).map((block, index) => (
+            <div key={`explanation-${index}`}>{block}</div>
+          ))}
         </SectionCard>
 
-        {!hideArtifact ? (
+        {artifact ? (
           <SectionCard id="artifact" title="Artifact">
             <div
               className="rounded-xl border-2 border-dashed border-rose-300 bg-rose-50/80 px-5 py-8 text-left"
               role="region"
               aria-label="Artifact placeholder area"
             >
-              <p className="text-sm leading-relaxed text-stone-700">{artifactEmbedLorem}</p>
+              <p className="text-sm leading-relaxed text-stone-700">{artifactPlaceholder}</p>
             </div>
-            <p>{artifactLorem}</p>
+            {toBlocks(artifact).map((block, index) => (
+              <div key={`artifact-${index}`}>{block}</div>
+            ))}
           </SectionCard>
         ) : null}
 
         <SectionCard id="reflection" title="Reflection">
-          <p>{reflectionLorem}</p>
-          <p>{reflectionLorem}</p>
+          {toBlocks(reflection).map((block, index) => (
+            <div key={`reflection-${index}`}>{block}</div>
+          ))}
         </SectionCard>
       </div>
     </div>
