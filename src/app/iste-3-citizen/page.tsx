@@ -36,20 +36,13 @@ const EXPLANATION = [
 const ARTIFACT = [
   (
     <div key="artifact-description" className="space-y-2">
-      <p className="font-medium text-stone-800">Artifact Description:</p>
       <p>
         This artifact is a 4th grade lesson plan focused on digital citizenship, specifically the
         topic “Safe and Kind Online.” The lesson helps students understand how their actions and
-        words online can affect others and how to make responsible, respectful choices online.
-      </p>
-      <p>
-        The students participate in a discussion, watch a video on digital citizenship, and then
+        words online can affect others and how to make responsible, respectful choices online. The students participate in a discussion, watch a video on digital citizenship, and then
         apply their learning by posting on a Padlet board and leaving kind comments on their
         classmates&apos; responses. I created this artifact to demonstrate how I would teach students
-        about being a digital citizen in an engaging but also age-appropriate way.
-      </p>
-      <p>
-        I also wanted to use technology to support learning, like using Padlet and educational
+        about being a digital citizen in an engaging but also age-appropriate way.  I also wanted to use technology to support learning, like using Padlet and educational
         videos.
       </p>
     </div>
@@ -59,28 +52,22 @@ const ARTIFACT = [
 const REFLECTION = [
   (
     <div key="reflection-rationale" className="space-y-4">
-      <p className="font-medium text-stone-800">Reflection/Rationale:</p>
       <p>
         This artifact relates to ISTE Standard 3 because it focuses on teaching students how to be
         responsible, safe, and respectful digital citizens. In the lesson, students learn how their
-        online actions can impact others and how to make smart choices online.
-      </p>
-      <p>
-        This connects directly to 3a: Create Positive Experiences, because after the lesson,
+        online actions can impact others and how to make smart choices online. This connects directly to 3a: Create Positive Experiences, because after the lesson,
         students practice giving kind feedback on a Padlet board.
       </p>
       <p>
         It also aligns with 3c: Model Safe, Legal, Ethical Practices, because the lesson explicitly
         teaches students about digital footprints, online safety, and respectful communication.
         Students learn that their words online can have real consequences and that they should
-        always treat people with kindness.
-      </p>
-      <p>
-        Creating this artifact helped me grow as a teacher because it showed me how important it is
+        always treat people with kindness. Creating this artifact helped me grow as a teacher because it showed me how important it is
         to intentionally teach digital citizenship, not assume students already know it. It also
         helped me see how technology can be used to support both learning and social-emotional
         skills.
       </p>
+  
     </div>
   ),
 ];

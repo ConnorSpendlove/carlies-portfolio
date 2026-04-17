@@ -32,22 +32,16 @@ const EXPLANATION = [
 const ARTIFACT = [
   (
     <div key="artifact-description" className="space-y-2">
-      <p className="font-medium text-stone-800">Artifact Description:</p>
       <p>
         This artifact is an interactive video created using Edpuzzle about the solar system.
         Edpuzzle is a website that has many videos you can use and adapt, and you can also upload
-        your own videos.
-      </p>
-      <p>
-        I added my own questions to Homeschools Pop&apos;s video “Planets of our Solar System for
+        your own videos. I added my own questions to Homeschools Pop&apos;s video “Planets of our Solar System for
         Kids” for students to answer as they watch. This turns the video into an active tool and
         assessment. This helps keep students engaged and also allows me to check their understanding
-        as they go.
-      </p>
-      <p>
-        I created this artifact to practice using different digital tools that can make lessons
+        as they go. I created this artifact to practice using different digital tools that can make lessons
         more engaging. It showed me how videos can be turned into lessons by adding checkpoints.
       </p>
+    
     </div>
   ),
 ];
@@ -55,20 +49,13 @@ const ARTIFACT = [
 const REFLECTION = [
   (
     <div key="reflection-rationale" className="space-y-4">
-      <p className="font-medium text-stone-800">Reflection/Rationale:</p>
       <p>
         This artifact relates to ISTE Standard 7 because it shows how technology can be used to
         support assessment and help guide learning. It connects to 7b: Use Tech to Create
         Assessments because I used Edpuzzle to turn a video into an assessment with questions built
-        in.
-      </p>
-      <p>
-        Instead of just watching a video, students will answer questions as they watch to make it a
+        in. Instead of just watching a video, students will answer questions as they watch to make it a
         kind of formative assessment. This also helps me see right away how students are doing and
-        what they understand, which supports 7c: Use Data to Guide Progress.
-      </p>
-      <p>
-        It also connects to 7a: Offer Alternative Assessments because students are not just taking
+        what they understand, which supports 7c: Use Data to Guide Progress. It also connects to 7a: Offer Alternative Assessments because students are not just taking
         a paper test. Something I really like about this is that if a student needs more support,
         they can rewatch parts, which helps meet different learners&apos; needs.
       </p>

@@ -4,6 +4,7 @@ type StandardSectionProps = {
   title: string;
   explanation: ReactNode | ReactNode[];
   reflection: ReactNode | ReactNode[];
+  reflectionTitle?: string;
   artifact?: ReactNode | ReactNode[];
   artifactPlaceholder?: ReactNode;
 };
@@ -49,6 +50,7 @@ export function StandardSection({
   explanation,
   artifact,
   reflection,
+  reflectionTitle = "Reflection",
   artifactPlaceholder = defaultArtifactPlaceholder,
 }: StandardSectionProps) {
   return (
@@ -63,7 +65,7 @@ export function StandardSection({
       </header>
 
       <div className="space-y-8">
-        <SectionCard id="explanation" title="Explanation">
+        <SectionCard id="explanation" title="Standard">
           {toBlocks(explanation).map((block, index) => (
             <div key={`explanation-${index}`}>{block}</div>
           ))}
@@ -84,7 +86,7 @@ export function StandardSection({
           </SectionCard>
         ) : null}
 
-        <SectionCard id="reflection" title="Reflection">
+        <SectionCard id="reflection" title={reflectionTitle}>
           {toBlocks(reflection).map((block, index) => (
             <div key={`reflection-${index}`}>{block}</div>
           ))}

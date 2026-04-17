@@ -31,14 +31,10 @@ const EXPLANATION = [
 const REFLECTION = [
   (
     <div key="leader-reflection" className="space-y-3">
-      <p className="font-medium text-stone-800">My Plan to Meet this Standard</p>
       <p>
         One specific way I plan to meet Standard 2a: Advance a Shared Vision is by working with
         other teachers, administrators, and even families to share a vision of how we can use
-        technology to improve student learning.
-      </p>
-      <p>
-        I want to be part of conversations at my school about how technology is being used. I also
+        technology to improve student learning. I want to be part of conversations at my school about how technology is being used. I also
         think it is important to have consistency in how digital tools are used across classrooms.
         This will help students have clear expectations.
       </p>
@@ -46,10 +42,7 @@ const REFLECTION = [
         I plan to meet Standard 2b: Advocate for Access by making sure all students have equal
         opportunities to use technology. I know that not all students will have access to devices
         or the internet at home. It&apos;s important to be aware of that fact and to plan accordingly
-        as much as possible.
-      </p>
-      <p>
-        I will avoid assigning work that requires technology outside of school, and instead, I will
+        as much as possible. I will avoid assigning work that requires technology outside of school, and instead, I will
         focus on giving students time in the classroom to use technology. I will also look for
         digital tools that support different learning needs, so all students can participate and
         succeed.
@@ -64,6 +57,7 @@ export default function Iste2LeaderPage() {
       title="ISTE 2: Leader"
       explanation={EXPLANATION}
       reflection={REFLECTION}
+      reflectionTitle="My Plan to Meet this Standard"
     />
   );
 }

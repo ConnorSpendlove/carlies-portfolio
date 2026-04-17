@@ -31,18 +31,11 @@ const EXPLANATION = [
 const ARTIFACT = [
   (
     <div key="artifact-description" className="space-y-2">
-      <p className="font-medium text-stone-800">Artifact Description:</p>
       <p>
         This artifact is an infographic I created using Venngage called “All About Me.” It is
-        designed for elementary students K-3 to shares information using pictures and short text.
-      </p>
-      <p>
-        The purpose of the infographic is to introduce myself to students and families at the
+        designed for elementary students K-3 to shares information using pictures and short text. The purpose of the infographic is to introduce myself to students and families at the
         beginning of the year. I created this artifact to learn how to use Venngage and practice
-        designing an infographic that could be used in my future classroom.
-      </p>
-      <p>
-        Through this assignment, I became more comfortable using digital design apps. I think that
+        designing an infographic that could be used in my future classroom. Through this assignment, I became more comfortable using digital design apps. I think that
         infographics are a fun way to communicate information.
       </p>
     </div>
@@ -52,25 +45,19 @@ const ARTIFACT = [
 const REFLECTION = [
   (
     <div key="reflection-rationale" className="space-y-4">
-      <p className="font-medium text-stone-800">Reflection/Rationale:</p>
       <p>
         This artifact connects to ISTE Standard 5 because it focuses on designing digital learning
         experiences that are supportive for students. It especially relates to 5a: Design Authentic
         Learning Activities, because the infographic can be used to introduce myself to students and
-        families and help build classroom community at the beginning of the year.
-      </p>
-      <p>
-        It also connects to 5b: Accommodate Learner Differences, because infographics combine
+        families and help build classroom community at the beginning of the year. It also connects to 5b: Accommodate Learner Differences, because infographics combine
         visuals and text that makes the information easier for different learners to understand and
         access.
       </p>
+
       <p>
         Creating this artifact taught me how my design choices can impact student understanding. How
         images and text are arranged, along with color choices and font size, can either support
-        learning or become a distraction.
-      </p>
-      <p>
-        It also helped me become more comfortable using digital tools like Venngage to create
+        learning or become a distraction. It also helped me become more comfortable using digital tools like Venngage to create
         materials for my future classroom. This assignment showed me how to use digital technology
         and intentional design to better support student learning and communication in meaningful
         ways.
