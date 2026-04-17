@@ -76,7 +76,7 @@ const REFLECTION = [
 export default function Iste4CollaboratorPage() {
   return (
     <StandardSection
-      title="ISTE 4: Collaborator"
+      title="ISTE Standards for Educators 4: Collaborator"
       explanation={EXPLANATION}
       artifact={ARTIFACT}
       artifactPlaceholder={

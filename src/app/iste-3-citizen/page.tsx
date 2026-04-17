@@ -75,7 +75,7 @@ const REFLECTION = [
 export default function Iste3CitizenPage() {
   return (
     <StandardSection
-      title="ISTE 3: Citizen"
+      title="ISTE Standards for Educators 3: Citizen"
       explanation={EXPLANATION}
       artifact={ARTIFACT}
       artifactPlaceholder={

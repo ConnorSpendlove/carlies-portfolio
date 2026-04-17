@@ -68,7 +68,7 @@ const REFLECTION = [
 export default function Iste1LearnerPage() {
   return (
     <StandardSection
-      title="ISTE 1: Learner"
+      title="ISTE Standards for Educators 1: Learner"
       explanation={EXPLANATION}
       artifact={ARTIFACT}
       artifactPlaceholder={

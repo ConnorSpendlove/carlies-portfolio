@@ -69,7 +69,7 @@ const REFLECTION = [
 export default function Iste5DesignerPage() {
   return (
     <StandardSection
-      title="ISTE 5: Designer"
+      title="ISTE Standards for Educators 5: Designer"
       explanation={EXPLANATION}
       artifact={ARTIFACT}
       artifactPlaceholder={

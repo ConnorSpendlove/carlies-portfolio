@@ -53,19 +53,18 @@ export function StandardSection({
   reflectionTitle = "Reflection",
   artifactPlaceholder = defaultArtifactPlaceholder,
 }: StandardSectionProps) {
+  const standardName = title.includes(":") ? title.split(":")[1]?.trim() : title;
+
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <header className="mb-10 border-b border-rose-200/90 pb-8 text-center">
-        <p className="text-sm font-medium uppercase tracking-wider text-rose-800/90">
-          ISTE standard
-        </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
           {title}
         </h1>
       </header>
 
       <div className="space-y-8">
-        <SectionCard id="explanation" title="Standard">
+        <SectionCard id="explanation" title={standardName}>
           {toBlocks(explanation).map((block, index) => (
             <div key={`explanation-${index}`}>{block}</div>
           ))}

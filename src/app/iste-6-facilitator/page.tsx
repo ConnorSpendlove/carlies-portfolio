@@ -76,7 +76,7 @@ const REFLECTION = [
 export default function Iste6FacilitatorPage() {
   return (
     <StandardSection
-      title="ISTE 6: Facilitator"
+      title="ISTE Standards for Educators 6: Facilitator"
       explanation={EXPLANATION}
       artifact={ARTIFACT}
       artifactPlaceholder={

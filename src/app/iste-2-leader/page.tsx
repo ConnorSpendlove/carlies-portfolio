@@ -54,7 +54,7 @@ const REFLECTION = [
 export default function Iste2LeaderPage() {
   return (
     <StandardSection
-      title="ISTE 2: Leader"
+      title="ISTE Standards for Educators 2: Leader"
       explanation={EXPLANATION}
       reflection={REFLECTION}
       reflectionTitle="My Plan to Meet this Standard"
